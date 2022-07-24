@@ -24,7 +24,6 @@ class AppServiceProvider extends ServiceProvider
      * Bootstrap any application services.
      *
      * @return void
-     */
     public function boot()
     {
         if (Schema::hasTable('comments')) {
@@ -38,5 +37,6 @@ class AppServiceProvider extends ServiceProvider
             $lastComments = collect($lastComments);
             View::share('lastComments', $lastComments);
         }
-    }
+}
+*/
 }

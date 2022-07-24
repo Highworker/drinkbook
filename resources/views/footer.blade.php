@@ -20,18 +20,15 @@
                                 <h2 class="footer-widget-title">Drinkbook News</h2>
                                 <div class="footer-post-item-wrapper">
                                     <ul>
-                                        @foreach($lastComments as $comment)
                                         <li class="post-item style-2">
                                             <div class="post-thumb">
                                                 <a href="#"><img src="/images/footer-images/p-item1.jpg" alt=""></a>
                                             </div>
                                             <div class="post-content">
-                                                <a class="title" href="#">{{$comment['text']}}</a>
                                                 <div class="meta-post">
                                                     <ul>
                                                         <li class="post-author">
                                                             <a href="#">
-                                                                <i class="fa fa-user"></i>{{$comment['username']}}
                                                             </a>
                                                         </li>
                                                         <!-- <li class="post-comments">
@@ -41,7 +38,6 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        @endforeach
                                     </ul>
                                 </div>
                             </div><!-- footer-widget -->

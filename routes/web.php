@@ -26,7 +26,7 @@ Route::get('/dashboard', function () {
 Route::get('/', [DrinkController::class, 'index']);
 Route::get('/drink/{id}', [DrinkController::class, 'show']);
 Route::get('/ingridients', [IngridientController::class, 'index']);
-require __DIR__.'/auth.php';
+// require __DIR__.'/auth.php';
 
 Route::post('/drink/{id}/comments/add',[CommentController::class, 'add'])->middleware('auth')->name('addComment');
 
